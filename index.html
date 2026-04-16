@@ -36,8 +36,7 @@
     Previously, I completed my undergraduate studies at Carnegie Mellon University, where I was advised by <a href="https://www.cs.cmu.edu/~lwehbe/">Prof. Leila Wehbe</a> and <a href="https://www.andrew.cmu.edu/user/murphy/"> Prof. Robert F. Murphy</a>.
                 </p>
                 <p>
-                  My research focuses on understanding, curating, and generating datasets to enable more efficient training of machine learning models. 
-                  I am especially interested in how we can use large pre-trained models to create synthetic data that unlocks new capabilities in downstream tasks. I am also interested in the properties of datasets that give rise to certain model abilities and in the kinds of data that trigger failures.
+                  My research focuses on understanding and controlling the behavior of multimodal generative models. I am interested in how we evaluate whether models behave as intended, how we steer generative models to produce desired outputs, and how training data shapes model capabilities and failure modes. I approach these questions by building rigorous evaluation frameworks, developing methods for controllable generation, and studying the relationship between data and model behavior.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:williamyang@cs.princeton.edu">Email</a> &nbsp;/&nbsp;
@@ -80,13 +79,13 @@
                 <a href="https://arxiv.org/abs/2510.24078">arXiv</a>
                 /
                 <a href="https://github.com/princetonvisualai/BeyondObjects">code</a>
-                <p>Short description of the paper goes here.</p>
+                <p>In low-data regime, models are especially prone to spurious correlations, and naïvely fine-tuning generative models on a few examples can amplify these biases while reducing diversity. We propose BeyondOBjects (BOB), a method that instead conditions on class-agnostic attributes (like background and pose) to preserve diversity and the model’s prior knowledge, generating synthetic data that improves classification performance.</p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- Add image: <img src="images/coreset.jpg" alt="Coreset" style="width:100%;max-width:160px;border-radius:4px;"> -->
+                <img src="images/coreset.jpg" alt="Coreset" style="width:100%;max-width:160px;border-radius:4px;"> 
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2507.11690">
@@ -104,7 +103,7 @@
                 <a href="https://arxiv.org/abs/2507.11690">arXiv</a>
                 /
                 <a href="https://github.com/princetonvisualai/Robustness-impacts-of-coreset-selection">code</a>
-                <p>Short description of the paper goes here.</p>
+                <p> In biased datasets, especially under data-efficient regimes, models often rely on spurious correlations, and it is unclear whether coreset selection methods alleviate or exacerbate this issue. This paper provides a comprehensive analysis of how different data selection strategies interact with dataset bias, showing that some methods can unintentionally amplify spurious correlations while others mitigate them to a degree. </p>
               </td>
             </tr>
 
@@ -127,13 +126,13 @@
                 <a href="https://arxiv.org/abs/2406.04284">arXiv</a>
                 /
                 <a href="https://github.com/princetonvisualai/What-is-Dataset-Distillation-Learning">code</a>
-                <p>Short description of the paper goes here.</p>
+                <p>Dataset distillation aims to compress large datasets into a small synthetic set that preserves training performance, but it remains unclear what information these distilled samples actually encode. This paper shows that distilled data is not a general substitute for real data and instead primarily captures information tied to early training dynamics rather than full dataset semantics. Therefore, their usefulness is tightly coupled to the distillation setting and does not generalize broadly outside it. </p>
               </td>
             </tr>
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- Add image: <img src="images/imagenetood.jpg" alt="ImageNet-OOD" style="width:100%;max-width:160px;border-radius:4px;"> -->
+              <img src="images/imagenetood.jpg" alt="ImageNet-OOD" style="width:100%;max-width:160px;border-radius:4px;"> 
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2310.01755">
@@ -149,7 +148,7 @@
                 <a href="https://arxiv.org/abs/2310.01755">arXiv</a>
                 /
                 <a href="https://github.com/princetonvisualai/imagenetood">code</a>
-                <p>Short description of the paper goes here.</p>
+                <p>Out-of-distribution (OOD) detection is complicated by the fact that models can respond similarly to semantically meaningful shifts (new classes) and simpler covariate shifts We shows that many modern OOD methods are more sensitive to covariate shift than to semantic shift, often performing no better than simple baselines. We introduce a cleaner evaluation setting and demonstrates that current gains in OOD detection are much smaller than previously believed for the target problem of semantic shift.</p>
               </td>
             </tr>
 
